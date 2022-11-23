@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website | Template</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        font-family: Arial;
+        margin: 0;
+    }
+    .header{
+        padding: 60px;
+        text-align: center;
+        background: #1abc9c;
+        color: white;
+    }
+    .navbar{
+        display: flex;
+        background-color: #333;
+    }
+    .navbar a{
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center;
+    }
+    .navbar a:hover{
+        background-color: #ddd;
+        color: black;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .side{
+        flex: 30%;
+        background-color: #f1f1f1;
+        padding: 20px;
+    }
+    .main{
+        flex:70%;
+        background-color: white;
+        padding: 20px;
+    }
+    .fakeimg{
+        background-color: #aaa;
+        width: 100%;        
+        padding: 20px;
+    }
+    .footer{
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+    }
+
+    @media screen and (max-width: 700px){
+        .row, .navbar{
+            flex-direction: column;
+        }
+    }
+</style>
+<body>
+    <div style="background-color:yellow; padding:5px;">
+        <h4 style="text-align:center;">Resize the Browser window to see the responsive. effect</h4>
+    </div>
+
+    <div class="header">
+        <h1>My Website</h1>
+        <p>With a <b>Flexible</b> layout.</p>
+    </div>
+
+    <div class="navbar">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <h2>About Me</h2>
+            <h5>Photo of me:</h5>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolorum esse repudiandae maiores?</p>
+            <h3>More Text</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, dolore.</p>
+            <div class="fakeimg" style="height:60px">Image</div><br>
+            <div class="fakeimg" style="height:60px">Image</div><br>
+            <div class="fakeimg" style="height:60px">Image</div>
+        </div>
+        <div class="main">
+            <h2>Title heading</h2>
+            <h5>Title description , Sep 29, 2022</h5>
+            <div class="fakeimg" style="height:200px">Image</div>
+            <p>Some text..</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt totam autem dolore voluptatem excepturi labore ut, quidem quae incidunt sed obcaecati fugit cum quo adipisci officiis dolor quisquam fuga eos. Excepturi et, sint repellendus fugit illo quibusdam voluptatem impedit doloribus ea molestiae veritatis laboriosam est magnam commodi velit corrupti aliquam.</p><br>
+            <h2>Title heading</h2>
+            <h5>title description, sep 29, 2022</h5>
+            <div class="fakeimg" style="height: 200px;">Image</div>
+            <p>Some text..</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed delectus nesciunt voluptatem in esse ex, accusantium fugiat eos dolore deserunt. Molestiae, autem alias, necessitatibus exercitationem labore provident laborum rem amet tempore ex perferendis nostrum praesentium suscipit aspernatur atque omnis soluta minus est dicta quia quaerat, dolore facere nihil? Voluptate, velit.</p>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+</body>
+</html>
